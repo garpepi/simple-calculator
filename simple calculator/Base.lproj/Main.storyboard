@@ -130,6 +130,12 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDb-eD-OA7">
+                                <rect key="frame" x="16" y="540" width="361" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -140,13 +146,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Urg-ZW-Fog" secondAttribute="trailing" constant="16" id="54t-ii-Ser"/>
                             <constraint firstItem="ZUt-8M-CIX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="5Ai-ht-XfM"/>
                             <constraint firstItem="Urg-ZW-Fog" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Bwt-8Q-nKi"/>
+                            <constraint firstItem="zDb-eD-OA7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="LCw-tZ-4RE"/>
                             <constraint firstItem="Urg-ZW-Fog" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="UKq-B3-WYK"/>
                             <constraint firstItem="ZUt-8M-CIX" firstAttribute="top" secondItem="9DM-ND-Flk" secondAttribute="bottom" constant="20" id="XpF-r4-UML"/>
+                            <constraint firstItem="zDb-eD-OA7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="540" id="c8h-4r-L5C"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9DM-ND-Flk" secondAttribute="trailing" constant="16" id="hod-88-hWZ"/>
+                            <constraint firstAttribute="trailing" secondItem="zDb-eD-OA7" secondAttribute="trailing" constant="16" id="l7D-L8-Qad"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="calculateLabel" destination="SL5-rR-4qp" id="HyF-QE-9Xo"/>
+                        <outlet property="errorDesc" destination="zDb-eD-OA7" id="ZeJ-F1-B0m"/>
                         <outlet property="resultLabel" destination="SVX-QY-0yz" id="vB2-rJ-i5Q"/>
                     </connections>
                 </viewController>
